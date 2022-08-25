@@ -53,3 +53,10 @@ button{
     font-family: inherit;
     padding: 1.3rem;
 }
+button:hover{
+    background-color: #04adc4;
+}
+button:focus{
+    outline: none;
+    background-color: #44b927;
+}
