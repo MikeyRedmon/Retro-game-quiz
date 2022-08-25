@@ -97,7 +97,7 @@ submitBtn.addEventListener("click", () =>{
             quiz.innerHTML= `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
             
-            <button conclick = "location.reload()">Retry?</button>`
+            <button onclick = "location.reload()">Retry?</button>`
         }
     }
 }
