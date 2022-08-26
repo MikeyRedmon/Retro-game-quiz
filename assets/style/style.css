@@ -7,8 +7,8 @@
 a{
     text-decoration: none;
 }
-.mainbody{
-    background-image: image("https://wallpaperaccess.com/full/17423.jpg");
+.welcome{
+    background-image: url("https://wallpaperaccess.com/full/17423.jpg");
 }
 body {
     background-color:  black;
