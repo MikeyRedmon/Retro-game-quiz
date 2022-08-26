@@ -4,9 +4,15 @@
 *{
     box-sizing: border-box;
 }
-body{
-    background-color: #b8c6bd;
-    background-image: linear-gradient(315deg, #b8d6bd 0%, #f5f7f7 100%);
+a{
+    text-decoration: none;
+}
+.mainbody{
+    background-image: image("https://wallpaperaccess.com/full/17423.jpg");
+}
+body {
+    background-color:  black;
+    background-image: linear-gradient(315deg, black 0%, blue 100%);
     font-family: "Roboto", sans-serif;
     display: flex;
     align-items: center;

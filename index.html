@@ -7,35 +7,23 @@
     <link rel="stylesheet" href="/assets/style/style.css">
     <title>Retro Game Quiz!</title>
 </head>
-<body>
-   
-
-    <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
-            <h2 id="question">Question Text</h2>
-            <ul>
-                <li>
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text">Answer</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="b" class="answer">
-                    <label for="b" id="b_text">Answer</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="c" class="answer">
-                    <label for="c" id="c_text">Answer</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="d" class="answer">
-                    <label for="d" id="d_text">Answer</label>
-                </li>
-            </ul>
+<body id="mainbody">
+    <div>
+        <h1 class="main_heading">Welcome to the Retro Gaming Quiz!</h1>
+        <div id="rules-div">
+         <h2>Quiz Rules</h2>
+            <button>Rules</button>
+            <p id="rules"></p>
         </div>
-        <button id="submit">Submit</button>
+        <div id="about-div">
+            <h2>About The Quiz</h2>
+            <button id="callabout">Learn More</button>
+            <p id="about"></p>
+        </div>
+        <div class="button-div">
+        <button><a href="quizz.html">Take The Quiz!</a></button>
+        </div>
     </div>
-   
-
     <script src="/assets/script/script.js"></script>
 </body>
 </html>
