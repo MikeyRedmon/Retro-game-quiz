@@ -1,3 +1,5 @@
+
+// Quiz content constant. 
 const quizData = [
     {
         Question: "When was Ratchet and Clank for the Playstation 2 Released?",
@@ -41,6 +43,8 @@ const quizData = [
     }
 ]
 
+
+// The constants to set up the text push for each question cycle
 const quiz = document.getElementById("quiz")
 const answerEls = document.querySelectorAll(".answer")
 const questionEl = document.getElementById("question")
@@ -54,7 +58,9 @@ let currentQuiz = 0
 let score = 0 
 
 loadQuiz()
-
+/**
+ * The load quiz function pushes text to the quizz.html file
+ */
 function loadQuiz() {
 
     deselectAnswers()
@@ -67,11 +73,15 @@ function loadQuiz() {
     c_text.innerText = currentQuizData.c
     d_text.innerText = currentQuizData.d
 }
-
+/**
+ * Deselects each of the radio buttons between questions
+ */
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
-
+/**
+ * Returns each of the selected answers
+ */
 function getSelected(){
     let answer
     answerEls.forEach(answerEl => {
@@ -82,6 +92,11 @@ function getSelected(){
     return answer
 }
 
+/**
+ * adds an event listener to the submit button, checking if the answer
+ * is correct and itterating the score if it is; then loading the next question
+ * also propts a pair of buttons to reload the quiz to retry or to go back to the landing page.
+ */
 submitBtn.addEventListener("click", () =>{
     const answer = getSelected()
     if(answer) {
