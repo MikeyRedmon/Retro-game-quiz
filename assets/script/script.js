@@ -1,5 +1,5 @@
 
-// Quiz content constant. 
+// Quiz content constant; questions, answers and the correct answer variable. 
 const quizData = [
     {
         Question: "When was Ratchet and Clank for the Playstation 2 Released?",
@@ -91,7 +91,6 @@ function getSelected(){
     })
     return answer
 }
-
 /**
  * adds an event listener to the submit button, checking if the answer
  * is correct and itterating the score if it is; then loading the next question
@@ -119,16 +118,14 @@ submitBtn.addEventListener("click", () =>{
     }
 }
 )
-
 /** Constants for calling rules, and the about section of the homepage. */
 const ourRules = document.getElementById("callrules")
 const rules = document.getElementById("rules")
 const aboutUs = document.getElementById("callabout")
 const about = document.getElementById("about")
-
-
-ourRules.addEventListener("click", rulesFunction())
 /** Function to push the content to the rules and about buttons */
+ourRules.addEventListener("click", rulesFunction())
+
 function rulesFunction() {
-    rules.textContent = "Our Rules are Simple! Have Fun, Try your best and beat the timer.";
+   rules.textContent = "Our Rules are Simple; Have Fun, Try your best and beat the timer."; 
 }
