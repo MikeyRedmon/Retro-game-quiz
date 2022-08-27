@@ -130,7 +130,5 @@ const about = document.getElementById("about")
 ourRules.addEventListener("click", rulesFunction())
 /** Function to push the content to the rules and about buttons */
 function rulesFunction() {
-
     rules.textContent = "Our Rules are Simple! Have Fun, Try your best and beat the timer.";
 }
-
