@@ -119,3 +119,18 @@ submitBtn.addEventListener("click", () =>{
     }
 }
 )
+
+/** Constants for calling rules, and the about section of the homepage. */
+const ourRules = document.getElementById("callrules")
+const rules = document.getElementById("rules")
+const aboutUs = document.getElementById("callabout")
+const about = document.getElementById("about")
+
+
+ourRules.addEventListener("click", rulesFunction())
+/** Function to push the content to the rules and about buttons */
+function rulesFunction() {
+
+    rules.textContent = "Our Rules are Simple! Have Fun, Try your best and beat the timer.";
+}
+
