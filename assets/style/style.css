@@ -6,9 +6,16 @@
 }
 a{
     text-decoration: none;
+    color: white;
 }
-.welcome{
-    background-image: url("https://wallpaperaccess.com/full/17423.jpg");
+#welcome {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 600px;
+    overflow: hidden;
+}
+.main_heading{
+    text-align: center;
 }
 body {
     background-color:  black;
