@@ -12,9 +12,9 @@ ourRules.addEventListener("click", rulesFunction)
 function rulesFunction() {
     if (rules.innerHTML === ""){
     rules.innerHTML = `
-   <ol>
+   <ol style = "text-align:center" font-family: inherit>
     <li>Try to get at least 50% of answers correct</li>
-    <li>Beat the timer in order to keep playing</li>
+    <li>No Googling in an alternative tab</li>
     <li>Have fun!</li> 
    </ol>
    `;} else {
@@ -27,16 +27,22 @@ aboutUs.addEventListener("click", aboutUsFunction)
 function aboutUsFunction(){
     if (about.innerHTML === "") {
     about.innerHTML = `
-    <form>
+    <form style="text-align:center" font-family: inherit>
         <h3>Submit Your Feedback!</h3>
+        <div>
         <label for="fname">First Name</label>
         <input type="text" id="fname" required>
+        </div>
+        <div>
         <label for="lname">Last Name</label>
         <input type="text" id="lname" required>
+        </div>
+        <div>
         <label for="feedback">Feedback;</label>
         <input type="text" id="feedback" required>
+        </div>
+        <input type="submit" value="Submit Your Feedback!" style= "background-color: #03cae4; color: #fff; border: none; display: block; width: 100%; cursor: pointer; font-size: 1.1rem;font-family: inherit">
     </form>
-<button>Submit Your Feedback</button>
     `;} 
     else {
         about.innerHTML = ""
