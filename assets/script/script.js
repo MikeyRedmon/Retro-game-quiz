@@ -39,6 +39,46 @@ const quizData = [
         c: "Thugs-4-Less",
         d: "A Unknown Space Phenomenon",
         Correct: "b",
+    },
+    {
+        Question: "Who is the leader of the Galaxtic Rangers?",
+        a: "Skid McMarks",
+        b: "Courtney Gears",
+        c: "Sasha Phyronix",
+        d: "Helga Von Stresisenburgen",
+        Correct: "c",
+    },
+    {
+        Question: "What is the name of the main villan of Ratchet and Clank 3?",
+        a: "The Tyhrranoids",
+        b: "Dr Nefarious",
+        c: "Thugs-4-Less",
+        d: "Big Al",
+        Correct: "b",
+    },
+    {
+        Question: "At the end of Ratchet and Clank 3, who from Ratchet and Clank 2 is sitting in the crowd?",
+        a: "Captain Qwark",
+        b: "Lawrence",
+        c: "Skrunch",
+        d: "Angela Cross",
+        Correct: "d",
+    },
+    {
+        Question: "In Ratchet: Deadlocked what is the name of the game Ratchet gets kidnapped to play in?",
+        a: "DreadZone",
+        b: "KillMap",
+        c: "VoxCross",
+        d: "Lifeless",
+        Correct: "a",
+    },
+    {
+        Question: "Who tells Ratchet to not end up like them near the ending of the game?",
+        a: "Reactor",
+        b: "Captain Starshield",
+        c: "Slugha",
+        d: "Ace Hardlight",
+        Correct: "d",
     }
 ]
 
