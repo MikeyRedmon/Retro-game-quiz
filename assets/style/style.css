@@ -72,7 +72,11 @@ button:focus{
     outline: none;
     background-color: #44b927;
 }
-
+#timer {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
 
 /* Media quires*/
 @media screen and (max-with: 860px) {
