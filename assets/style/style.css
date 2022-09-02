@@ -76,6 +76,7 @@ button:focus{
     text-align: center;
     justify-content: center;
     font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Media quires*/

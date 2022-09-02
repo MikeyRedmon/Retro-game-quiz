@@ -1,3 +1,7 @@
+/* animation scrips */
+
+gsap.to('#welcome', {y: 60, duration: 1})
+
 // Quiz content constant; questions, answers and the correct answer variable. 
 const quizData = [
     {
