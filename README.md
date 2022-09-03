@@ -54,3 +54,12 @@ The results page has custom response messages, depending on the score variable.
 The features of the website; that being the landing page and its buttons; the score tracker and custom response messages all give the correct return values. 
 
 I tested all these items by clicking on the buttons to see if it deployed the correct content into the page and tested the custom results messages, making sure they deployed on the correct number of answers.
+
+## Validator 
+
+All the Validator checks came back clear and clean, with no bugs or errors. 
+
+![html validator](/assets/images/htmlvalidator.png)
+![css validator](/assets/images/cssvalidator.png)
+![Javascript Validator 1](/assets/images/java1.png)
+![Javascript Validator 2](/assets/images/java2.png)

@@ -1,13 +1,13 @@
 /** Constants for calling rules, and the about section of the homepage. */
 
-const ourRules = document.getElementById("callRules")
-const rules = document.getElementById("rules")
-const aboutUs = document.getElementById("callAbout")
-const about = document.getElementById("about")
+const ourRules = document.getElementById("callRules");
+const rules = document.getElementById("rules");
+const aboutUs = document.getElementById("callAbout");
+const about = document.getElementById("about");
 
 /** Function to push the content to the rules and about buttons */
 
-ourRules.addEventListener("click", rulesFunction)
+ourRules.addEventListener("click", rulesFunction);
 
 function rulesFunction() {
     if (rules.innerHTML === ""){
@@ -19,11 +19,11 @@ function rulesFunction() {
     <li>Have fun!</li> 
    </ol>
    `;} else {
-    rules.innerHTML = ""
+    rules.innerHTML = "";
    } 
 }
 
-aboutUs.addEventListener("click", aboutUsFunction)
+aboutUs.addEventListener("click", aboutUsFunction);
 
 function aboutUsFunction(){
     if (about.innerHTML === "") {
@@ -46,6 +46,6 @@ function aboutUsFunction(){
     </form>
     `;} 
     else {
-        about.innerHTML = ""
+        about.innerHTML = "";
     }
 }

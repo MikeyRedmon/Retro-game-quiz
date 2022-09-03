@@ -1,7 +1,3 @@
-/* animation scrips */
-
-gsap.to('#welcome', {y: 60, duration: 1})
-
 // Quiz content constant; questions, answers and the correct answer variable. 
 const quizData = [
     {
@@ -84,55 +80,55 @@ const quizData = [
         d: "Ace Hardlight",
         Correct: "d",
     }
-]
+];
 
 
 // The constants to set up the text push for each question cycle
-const quiz = document.getElementById("quiz")
-const answerEls = document.querySelectorAll(".answer")
-const questionEl = document.getElementById("question")
-const a_text = document.getElementById("a_text")
-const b_text = document.getElementById("b_text")
-const c_text = document.getElementById("c_text")
-const d_text = document.getElementById("d_text")
-const submitBtn = document.getElementById("submit")
+const quiz = document.getElementById("quiz");
+const answerEls = document.querySelectorAll(".answer");
+const questionEl = document.getElementById("question");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const submitBtn = document.getElementById("submit");
 
-let currentQuiz = 0
-let score = 0 
+let currentQuiz = 0;
+let score = 0 ;
 
-loadQuiz()
+loadQuiz();
 /**
  * The load quiz function pushes text to the quizz.html file
 */
 function loadQuiz() {
 
-    deselectAnswers()
+    deselectAnswers();
 
-    const currentQuizData = quizData[currentQuiz]
+    const currentQuizData = quizData[currentQuiz];
 
-    questionEl.innerText = currentQuizData.Question
-    a_text.innerText = currentQuizData.a
-    b_text.innerText = currentQuizData.b
-    c_text.innerText = currentQuizData.c
-    d_text.innerText = currentQuizData.d
+    questionEl.innerText = currentQuizData.Question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
 }
 /**
  * Deselects each of the radio buttons between questions
  */
 function deselectAnswers() {
-    answerEls.forEach(answerEl => answerEl.checked = false)
+    answerEls.forEach(answerEl => answerEl.checked = false);
 }
 /**
  * Returns each of the selected answers
  */
 function getSelected(){
-    let answer
+    let answer;
     answerEls.forEach(answerEl => {
         if(answerEl.checked){
-            answer = answerEl.id
+            answer = answerEl.id;
         }
-    })
-    return answer
+    });
+    return answer;
 }
 /**
  * adds an event listener to the submit button, checking if the answer
@@ -140,16 +136,16 @@ function getSelected(){
  * also propts a pair of buttons to reload the quiz to retry or to go back to the landing page.
  */
 submitBtn.addEventListener("click", () =>{
-    const answer = getSelected()
+    const answer = getSelected();
     if(answer) {
         if (answer === quizData[currentQuiz].Correct) {
-            ++score
+            ++score;
         }
 
-        currentQuiz++
+        currentQuiz++;
 
         if(currentQuiz < quizData.length) {
-            loadQuiz()
+            loadQuiz();
         } else if (score < 5) {
             quiz.innerHTML= `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
@@ -166,30 +162,30 @@ submitBtn.addEventListener("click", () =>{
             <button onclick = "location.reload()">Retry?</button>
             <button><a href="index.html">Return To Homepage</a></button>
             `;
-        } else if (score = 10){
-        quiz.innerHTML= `
-        <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-        <h2>You got all the answers correct! You're a true PS2 Aficionado.</h2>
+        } else if (score === 10){
+            quiz.innerHTML= `
+            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+         <h2>You got all the answers correct! You're a true PS2 Aficionado.</h2>
         
-        <button onclick = "location.reload()">Retry?</button>
-        <button><a href="index.html">Return To Homepage</a></button>
-        `;
+         <button onclick = "location.reload()">Retry?</button>
+          <button><a href="index.html">Return To Homepage</a></button>
+          `;
     }
     }
-})
+});
 /** Constants and functions for the timer */
-const startingMinutes = 10
-let time = startingMinutes * 60
+const startingMinutes = 10;
+let time = startingMinutes * 60;
 
-const countdownEl = document.getElementById("timer")
+const countdownEl = document.getElementById("timer");
 
 setInterval(updateCountdown, 1000);
 
 function updateCountdown() {
     const minutes = Math.floor(time/60);
     let second = time % 60;
-    second = second < 10 ? '0' + second : second
+    second = second < 10 ? '0' + second : second;
 
-    countdownEl.innerHTML = `${minutes}:${second}`
+    countdownEl.innerHTML = `${minutes}:${second}`;
     time --;
 }
