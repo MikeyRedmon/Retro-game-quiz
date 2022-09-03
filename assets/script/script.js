@@ -150,7 +150,7 @@ submitBtn.addEventListener("click", () =>{
 
         if(currentQuiz < quizData.length) {
             loadQuiz()
-        } else if (score < 3) {
+        } else if (score < 5) {
             quiz.innerHTML= `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
             <h2>You could use a refresher, do some research and try again!</h2>
@@ -158,15 +158,7 @@ submitBtn.addEventListener("click", () =>{
             <button onclick = "location.reload()">Retry?</button>
             <button><a href="index.html">Return To Homepage</a></button>
             `;
-        } else if (score < 5){
-            quiz.innerHTML= `
-            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-            <h2>You got half the questions correct! Well done, you've passed the quiz!</h2>
-            
-            <button onclick = "location.reload()">Retry?</button>
-            <button><a href="index.html">Return To Homepage</a></button>
-            `;
-        } else if (score < 8){
+        } else if (score > 5){
             quiz.innerHTML= `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
             <h2>You got over half the questions correct, just a few more for that 100%!</h2>
@@ -174,7 +166,7 @@ submitBtn.addEventListener("click", () =>{
             <button onclick = "location.reload()">Retry?</button>
             <button><a href="index.html">Return To Homepage</a></button>
             `;
-    }else if (score = 10){
+        } else if (score = 10){
         quiz.innerHTML= `
         <h2>You answered ${score}/${quizData.length} questions correctly</h2>
         <h2>You got all the answers correct! You're a true PS2 Aficionado.</h2>

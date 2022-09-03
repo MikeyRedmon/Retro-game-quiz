@@ -23,9 +23,34 @@ some even have releases that go through four of the five Playstation console lin
 
 # Existing Features
 
-### Rules and About us dynamic Buttons
+### Rules and Feedback dynamic Buttons
 
-*Insert Image of the buttons and their function*
+![The Landing Page.](./assets/images/landingpage.png)
 
 Featured on the landing page, these two buttons when clicked push the rules of the quiz and a form for feedback onto the page; allowing seemless feedback for the user. 
 
+![The Landing Page with rules content](/assets/images/rules.png)
+
+When the Rules button is clicked again it reverts back to only having the buttons on the page. The same thing applies for the Form button/ 
+
+![The Landing Page with the Form content](/assets/images/feedbackform.png)
+
+### The Functionality
+
+The page has a timer that gives the user a simple and clear time to complete the entire quiz. It also has the questions and multiple choice answers below, along with the submit button. 
+
+![The Functionality of the page](/assets/images/functionality.png)
+
+The results page has custom response messages, depending on the score variable. 
+
+![The First Variable message](/assets/images/variable1.png)
+
+![The Second variable message](/assets/images/variable2.png)
+
+![The Third variable message](/assets/images/variable3.png)
+
+# Testing
+
+The features of the website; that being the landing page and its buttons; the score tracker and custom response messages all give the correct return values. 
+
+I tested all these items by clicking on the buttons to see if it deployed the correct content into the page and tested the custom results messages, making sure they deployed on the correct number of answers.
