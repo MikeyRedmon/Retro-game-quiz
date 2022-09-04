@@ -320,7 +320,7 @@ submitBtn.addEventListener("click", () =>{
             <button onclick = "location.reload()">Retry?</button>
             <button><a href="index.html">Return To Homepage</a></button>
             `;
-        } else if (score > 15){
+        } else if (score <= 29){
             quiz.innerHTML= `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
             <h2>You got over half the questions correct, just a few more for that 100%!</h2>
@@ -331,7 +331,7 @@ submitBtn.addEventListener("click", () =>{
         } else if (score === 30){
             quiz.innerHTML= `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-         <h2>You got all the answers correct! You're a true PS2 Aficionado.</h2>
+            <h2>You got all the answers correct! You're a true PS2 Aficionado.</h2>
         
          <button onclick = "location.reload()">Retry?</button>
           <button><a href="index.html">Return To Homepage</a></button>
