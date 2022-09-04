@@ -79,10 +79,168 @@ const quizData = [
         c: "Slugha",
         d: "Ace Hardlight",
         Correct: "d",
+    },
+    {
+        Question: "What Year did Jak and Daxter; The Precursor Legacy Release for PS2?",
+        a: "1999",
+        b: "2000",
+        c: "2002",
+        d: "2001",
+        Correct: "d",
+    },
+    {
+        Question: "How many Powercells did you need to finish Jak and Daxter?",
+        a: "56",
+        b: "77",
+        c: "84",
+        d: "101",
+        Correct: "b",
+    },
+    {
+        Question: "In Jak 2, what are Jaks first words?",
+        a: "I'm gonna kill Praxis!",
+        b: "D..Daxter? That you?",
+        c: "What took you so long?",
+        d: "Get me out of here, Dax",
+        Correct: "a",
+    },
+    {
+        Question: "What is revealed when Jak and Daxter find The Sacred Site?",
+        a: "A Precursor Egg",
+        b: "A Morph Gun upgrade",
+        c: "Samos' Hut",
+        d: "The Lost Heir of the city",
+        Correct: "c",
+    },
+    {
+        Question: "Who is revealed to be the metalhead leader?",
+        a: "Torn",
+        b: "Ashlin",
+        c: "Count Vegar",
+        d: "Kor",
+        Correct: "d",
+    },
+    {
+        Question: "Who finds Jak in the desert?",
+        a: "Samos",
+        b: "Kiera",
+        c: "Torn",
+        d: "Damas",
+        Correct: "d",
+    },
+    {
+        Question: "What is the name of Daxters Bar in Heaven City?",
+        a: "The Little Weasel",
+        b: "The Naughty Ottsel",
+        c: "A Drop Of Poision",
+        d: "The Lost Lizard",
+        Correct: "b",
+    },
+    {
+        Question: "What are Ottsels?",
+        a: "The Precursors",
+        b: "Hyper Intelligent creatures of unknowable origin",
+        c: "They're just small fuzzballs",
+        d: "No Ones sure",
+        Correct: "a",
+    },
+    {
+        Question: "Who does Jak beat to save the world?",
+        a: "The Dark Makers",
+        b: "Errol",
+        c: "Damas",
+        d: "Sig",
+        Correct: "b",
+    },
+    {
+        Question: "In Jak X; Combat Racing what does Mizo say to Jak at the end?",
+        a: "You're a lot like Krew...",
+        b: "When will you learn, Jak?",
+        c: "You have a habit of leaving people to die, don't you?",
+        d: "I'm above begging...",
+        Correct: "c",
+    },
+    {
+        Question: "In Sly Cooper, what is the name of the Rival gang?",
+        a: "The Fiendish Five",
+        b: "The Terrible Trio",
+        c: "The Devilish Seven",
+        d: "The Hateful Eight",
+        Correct: "a",
+    },
+    {
+        Question: "Whats the name of the Interpol Agent whos trying to catch the Cooper Gang?",
+        a: "Tina Seal",
+        b: "Carmelita Fox",
+        c: "Cecelia Crow ",
+        d: "Tristina Trip",
+        Correct: "b",
+    },
+    {
+        Question: "How is Clockwork alive after all this time?",
+        a: "Their machinery and Hate",
+        b: "Forming a deal with a demon",
+        c: "Creating a replacement for their heart",
+        d: "Living on a good diet on excercise",
+        Correct: "a",
+    },
+    {
+        Question: "In Sly 2: Band Of Thieves who is Carmelitas new Partner?",
+        a: "Constable Reggie",
+        b: "Constable Jacqueline",
+        c: "Constable Neyla",
+        d: "Constable Francis",
+        Correct: "c",
+    },
+    {
+        Question: "In Sly 2, what is the name of the Episode in which Bently must save the gang?",
+        a: "Wrecking Ball",
+        b: "Jailbreak",
+        c: "Electric Escape",
+        d: "Damp Dungeons",
+        Correct: "b",
+    },
+    {
+        Question: "In Sly 2, What iconic item has to be left behind before the final chapter?",
+        a: "Slys Cane",
+        b: "Bently's PC",
+        c: "Murrys Gloves",
+        d: "The Team van",
+        Correct: "d",
+    },
+    {
+        Question: "In Sly 2, Who helps Sly take down Clock-La?",
+        a: "Mugshot",
+        b: "Mz Ruby",
+        c: "Carmelita",
+        d: "Constable Reggie",
+        Correct: "c",
+    },
+    {
+        Question: "In Sly 3; Honour Among Thieves what does Sly Admit to being his biggest regret?",
+        a: "Not being honest with Carmelita about his feelings",
+        b: "Not being a better leader",
+        c: "Not Finishing this job",
+        d: "Not finding that one big score",
+        Correct: "a",
+    },
+    {
+        Question: "In Sly 3; Honour Among Thieves who is the character that is recruited from the first game?",
+        a: "Mz Ruby",
+        b: "Muggshot",
+        c: "The Panda King",
+        d: "Raleigh",
+        Correct: "c",
+    },
+    {
+        Question: "What does Sly do in the finally to get with Carmelita?",
+        a: "He renouces his life of crime",
+        b: "He 'pretends' to have amnesia",
+        c: "Carmelita arrests him, but he convinces her of his feelings",
+        d: "He doesn't, he gets away before he finds her",
+        Correct: "b",
     }
 ];
-
-
 // The constants to set up the text push for each question cycle
 const quiz = document.getElementById("quiz");
 const answerEls = document.querySelectorAll(".answer");
@@ -146,15 +304,23 @@ submitBtn.addEventListener("click", () =>{
 
         if(currentQuiz < quizData.length) {
             loadQuiz();
-        } else if (score < 5) {
+        } else if (score === 0) {
             quiz.innerHTML= `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-            <h2>You could use a refresher, do some research and try again!</h2>
+            <h2>You got none of the answers right, we recommend playing the games to learn more!</h2>
+            
+            <button onclick = "location.reload()">Retry?</button>
+            <button><a href="index.html">Return To Homepage</a></button>
+            `; 
+        }  else if (score < 15){
+            quiz.innerHTML= `
+            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+            <h2>You got less than half the questions right, we would recommend a refresher!</h2>
             
             <button onclick = "location.reload()">Retry?</button>
             <button><a href="index.html">Return To Homepage</a></button>
             `;
-        } else if (score > 5){
+        } else if (score > 15){
             quiz.innerHTML= `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
             <h2>You got over half the questions correct, just a few more for that 100%!</h2>
@@ -162,7 +328,7 @@ submitBtn.addEventListener("click", () =>{
             <button onclick = "location.reload()">Retry?</button>
             <button><a href="index.html">Return To Homepage</a></button>
             `;
-        } else if (score === 10){
+        } else if (score === 30){
             quiz.innerHTML= `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
          <h2>You got all the answers correct! You're a true PS2 Aficionado.</h2>
