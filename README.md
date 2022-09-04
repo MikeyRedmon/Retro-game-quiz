@@ -49,13 +49,13 @@ The results page has custom response messages, depending on the score variable.
 
 ![The Third variable message](/assets/images/variable3.png)
 
-# Testing
+## Testing
 
 The features of the website; that being the landing page and its buttons; the score tracker and custom response messages all give the correct return values. 
 
 I tested all these items by clicking on the buttons to see if it deployed the correct content into the page and tested the custom results messages, making sure they deployed on the correct number of answers.
 
-## Validator 
+### Validator 
 
 All the Validator checks came back clear and clean, with no bugs or errors. 
 
@@ -63,3 +63,21 @@ All the Validator checks came back clear and clean, with no bugs or errors.
 ![css validator](/assets/images/cssvalidator.png)
 ![Javascript Validator 1](/assets/images/java1.png)
 ![Javascript Validator 2](/assets/images/java2.png)
+
+### Bugs
+
+I could find no bugs in the code
+
+## Credits
+
+### Content
+
+All content was written by the developer. 
+
+## Acknowledgements
+
+- My Tutor, Marcel for providing exceptional guidance and valuable constructive criticism.
+
+- My Friends, for their constant source of support and ideas. 
+
+- Code institutes excellent Slack community. 
