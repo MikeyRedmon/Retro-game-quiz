@@ -1,10 +1,12 @@
 # The Playstation 2 Mascot Quiz
 
-*Insert Responsive Image*
+![The Responsive website](./assets/images/isitresponsive.png)
 
 This quiz is to test folks knowledge of the biggest Mascots of the Playstation 2, the best selling home gaming console. With over 155 million units sold world wide, the console has 
 several notible mascots, but the three biggest are; Ratchet and Clank, Sly Cooper and Jak and Daxter. All three of these games have multiple entries spanning the history of the PS2, 
 some even have releases that go through four of the five Playstation console lineup; with the newest Entry being Ratchet and Clank; A Rift apart. 
+
+You can find a link to the deployed website here; [The Quiz Website](https://mikeyredmon.github.io/Retro-game-quiz/)
 
 ## Project Goals
 
