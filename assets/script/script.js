@@ -285,8 +285,10 @@ function getSelected(){
     answerEls.forEach(answerEl => {
         if(answerEl.checked){
             answer = answerEl.id;
+        } else if(answerEl.checked === false) {
+            noAnswer.innerHTML = `<h3 style="text-align:center">Please Select an answer</h3>`;
         } else {
-            noAnswer.innerHTML = `<h3 style="text-align:center">Please Select an answer</h3>`
+            noAnswer.innerHTML = ``;
         }
     });
     return answer;
@@ -357,4 +359,11 @@ function updateCountdown() {
 
     countdownEl.innerHTML = `${minutes}:${second}`;
     time --;
+}
+
+// constants and function for the progress bar
+const progressBar = document.querySelector("#progbar")
+
+function animateProgressBar() {
+    progressBar.style.width =  currentQuiz + "%";
 }
