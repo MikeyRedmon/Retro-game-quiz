@@ -1,5 +1,3 @@
-/** Constants for calling rules, and the about section of the homepage. */
-
 const ourRules = document.getElementById("callRules");
 const rules = document.getElementById("rules");
 const aboutUs = document.getElementById("callAbout");
@@ -32,18 +30,25 @@ function aboutUsFunction(){
         <h3>Submit Your Feedback!</h3>
         <div>
         <label for="fname">First Name</label>
+        </div>
+        <div>
         <input type="text" id="fname" required>
         </div>
         <div>
         <label for="lname">Last Name</label>
+        </div>
+        <div>
         <input type="text" id="lname" required>
         </div>
         <div>
         <label for="feedback">Feedback</label>
+        </div>
+        <div>
         <input type="text" id="feedback" required>
         </div>
-        <input type="submit" value="Submit Your Feedback!" style= "background-color: #03cae4; color: #fff; border: none; display: block; width: 100%; cursor: pointer; font-size: 1.1rem;font-family: inherit">
-    </form>
+        <br>
+        <input type="submit" class="subbutton" value="Submit Your Feedback!">
+        </form>
     `;} 
     else {
         about.innerHTML = "";

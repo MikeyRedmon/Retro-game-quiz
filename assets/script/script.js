@@ -249,6 +249,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const noAnswer = document.getElementById("alert")
 const submitBtn = document.getElementById("submit");
 
 let currentQuiz = 0;
@@ -284,6 +285,8 @@ function getSelected(){
     answerEls.forEach(answerEl => {
         if(answerEl.checked){
             answer = answerEl.id;
+        } else {
+            noAnswer.innerHTML = `<h3 style="text-align:center">Please Select an answer</h3>`
         }
     });
     return answer;
@@ -333,8 +336,8 @@ submitBtn.addEventListener("click", () =>{
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
             <h2>You got all the answers correct! You're a true PS2 Aficionado.</h2>
         
-         <button onclick = "location.reload()">Retry?</button>
-          <button><a href="index.html">Return To Homepage</a></button>
+            <button onclick = "location.reload()">Retry?</button>
+            <button><a href="index.html">Return To Homepage</a></button>
           `;
     }
     }
