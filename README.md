@@ -8,6 +8,23 @@ some even have releases that go through four of the five Playstation console lin
 
 You can find a link to the deployed website here; [The Quiz Website](https://mikeyredmon.github.io/Retro-game-quiz/)
 
+## Table Of Contents
+
+    1. Project Goals
+       - Design Objectives
+       - User Goals
+       - Design Ethos
+    2. Existing Features
+        - Rules an Feedback Buttons
+        - Functonality
+    3. Testing
+        - Manual Testing
+        - HTML Validator
+        - CSS Validator
+        - JavaScript Validator 
+        - Bugs
+    4. Credits and Acknowledgements
+
 ## Project Goals
 
 ### Design Objectives
@@ -22,6 +39,14 @@ You can find a link to the deployed website here; [The Quiz Website](https://mik
 - As a user, I want to be able to understand what this website is from the landing page. 
 - As a user, I want to be able to revert to the homepage and restart the quiz from the end page. 
 - As a user, I want to be able to read the rules of the quiz and give feedback from the main page. 
+
+### Design Ethos. 
+
+When designing the website, I decided that a gradiant background of Blue to Black would be the best option, as those two colours are synonymous with the Playstation 2. This is the same reason I chose the Roboto font as it reminds me of the Playstation 2 font. 
+
+The Welcome and Quiz containers are black with white text for contrast, in order to make them easy to read. 
+
+The buttons on the Welcome and Quiz containers are a light blue and turn green when they are pressed. The Return Home button is black as to stand out from the rest of the buttons as a unique asset. 
 
 # Existing Features
 
@@ -50,6 +75,10 @@ The results page has custom response messages, depending on the score variable.
 ![The Second variable message](/assets/images/variable2.png)
 
 ![The Third variable message](/assets/images/variable3.png)
+
+There is a return to hompage button, in case a User wishes to return to the Quiz's landing page while in the middle of the quiz. 
+
+![The Return to homepage button](/assets/images/returnbutton.png)
 
 ## Testing
 
