@@ -23,7 +23,9 @@ You can find a link to the deployed website here; [The Quiz Website](https://mik
         - CSS Validator
         - JavaScript Validator 
         - Bugs
-    4. Credits and Acknowledgements
+    4. Future Plans
+    5. Technologies Used
+    6. Credits and Acknowledgements
 
 ## Project Goals
 
@@ -117,6 +119,12 @@ All the Validator checks came back clear and clean, with no bugs or errors.
 ![css validator](/assets/images/cssvalidator.png)
 ![Javascript Validator 1](/assets/images/java1.png)
 ![Javascript Validator 2](/assets/images/java2.png)
+
+## Future Plans
+
+In the future I would like to add;
+- A Progress bar
+- A Warning in case the user forgets to select an answer.
 
 ## Technologies Used
 
