@@ -20,7 +20,7 @@ body {
 #welcome {
     background-color: black;
     border-radius: 10px;
-    width: 95%;
+    width: 75%;
     overflow: hidden;
     color: white;
     position: absolute;
@@ -35,7 +35,7 @@ body {
     background-color: black;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-    width: 95%;
+    width: 75%;
     overflow: hidden;
     color: white;
     position: absolute;
