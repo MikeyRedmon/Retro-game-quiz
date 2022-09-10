@@ -82,9 +82,32 @@ There is a return to hompage button, in case a User wishes to return to the Quiz
 
 ## Testing
 
-The features of the website; that being the landing page and its buttons; the score tracker and custom response messages all give the correct return values. 
+### Testing User Stories
 
-I tested all these items by clicking on the buttons to see if it deployed the correct content into the page and tested the custom results messages, making sure they deployed on the correct number of answers.
+- As a player, I want the game's website to be easy to navigate.
+    - The website has clear, easy to read buttons 
+    - The website is well designed and intuitively layed out
+- As a player, I want the game to be fun
+    - The questions are broad and some can be a real head scratcher
+    - Their are several questions across three major PS2 mascots in order to make the content varied
+    - The limited time gives a sense of urgency
+- As a player, I want easy access to the game rules
+    - The rules are avalible from the home page via a button click at any point
+- As a player I want the game to be easy to control
+    - The buttons and radio question submissions are intuitive 
+
+
+### Manual Testing
+
+ Device Compatibiliy
+
+|    Device  | Outcome | Pass/Fail |
+| ----------- | ----------- | ------------- |
+| Samsung Galaxy S10+ | No apperance, responsivness nor functionality issues | Pass |
+| iPad | No apperance, responsivness nor functionality issues | Pass |
+| iPhone 12/13 mini | No apperance, responsivness nor functionality issues | Pass |
+| Kindle Fire | No apperance, responsivness nor functionality issues  | Pass |
+| iPhone Se Second Gen | No apperance, responsivness nor functionality issues| Pass |
 
 ### Validator 
 
@@ -94,6 +117,10 @@ All the Validator checks came back clear and clean, with no bugs or errors.
 ![css validator](/assets/images/cssvalidator.png)
 ![Javascript Validator 1](/assets/images/java1.png)
 ![Javascript Validator 2](/assets/images/java2.png)
+
+## Technologies Used
+
+HTML5, CSS3 and Javascript. 
 
 ### Bugs
 
